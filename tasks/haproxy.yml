@@ -1,0 +1,14 @@
+- name: Install haproxy
+  yum: pkg=haproxy state=latest
+
+- name: copy Haproxy config
+  copy: src=templates/haproxy.cfg dest=/etc/haproxy/haproxy.cfg
+
+- name: copy rsyslog to system
+  template: src=files/udp-localhost.conf dest=/etc/rsyslog.conf owner=root group=root mode=0644
+  notify:
+   - restart rsyslog
+
+- name: Start HAproxy
+  service: name=haproxy state=started enabled=yes
+

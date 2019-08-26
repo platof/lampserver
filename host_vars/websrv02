@@ -1,0 +1,8 @@
+copyright_msg: Copyright2015
+brick: brick02
+ip_address: 192.168.56.106
+keepalived_state: SLAVE
+keepalived_vip_int: eth1
+keepalived_router_pri: 100
+keepalived_vip: 192.168.56.120
+

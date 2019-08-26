@@ -1,0 +1,6 @@
+--- # tasks for lampservers
+
+- import_tasks: keepalived.yml
+- import_tasks: haproxy.yml
+- import_tasks: configure.yml
+- import_tasks: diskconfig.yml

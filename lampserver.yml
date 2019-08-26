@@ -1,0 +1,6 @@
+--- # my lamp playbook
+- hosts: websrv
+  user: root
+  connection: ssh
+  roles:
+   - lampserver

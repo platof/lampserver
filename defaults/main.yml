@@ -1,0 +1,8 @@
+# set defaults
+gluster_brick_dir: 
+  - /data/glusterfs/var-www/brick01/brick
+  - /data/glusterfs/var-www/brick02/brick
+gluster_volume: var-www
+gluster_cluster_hosts:
+  - 192.168.56.105
+  - 192.168.56.106

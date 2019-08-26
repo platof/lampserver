@@ -1,0 +1,8 @@
+copyright_msg: Copyright2015
+brick: brick01
+ip_address: 192.168.56.105
+keepalived_state: MASTER
+keepalived_vip_int: eth1
+keepalived_router_pri: 101
+keepalived_vip: 192.168.56.120
+
